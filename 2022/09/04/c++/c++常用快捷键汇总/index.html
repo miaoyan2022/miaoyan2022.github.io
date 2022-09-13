@@ -14,7 +14,7 @@
 <meta property="og:description" content="【C++】VS常常见使用问题汇总vs版本Microsoft Visual Studio Community 2022 版本 17.3.0 VisualStudio.17.Release&#x2F;17.3.0+32804.467 Microsoft .NET Framework 版本 4.8.04084  已安装的版本: Community  1、快捷键设置批量注释与取消批量注释: Ctrl+K,Ctrl+">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-09-04T13:46:36.383Z">
-<meta property="article:modified_time" content="2022-09-07T15:35:58.940Z">
+<meta property="article:modified_time" content="2022-09-13T15:04:04.568Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -99,6 +99,11 @@ Microsoft .NET Framework
 快捷键是两个组合，支持自定义（工具-&gt;选项-&gt;环境-&gt;键盘中，可以自定义快捷键）
 </code></pre>
 <h2 id="2、设置只调试当前页面"><a href="#2、设置只调试当前页面" class="headerlink" title="2、设置只调试当前页面"></a>2、设置只调试当前页面</h2><pre><code>左窗口“解决方案属性页” --&gt; “属性” --&gt; 选择“当前选定内容”
+</code></pre>
+<h2 id="3、报错"><a href="#3、报错" class="headerlink" title="3、报错"></a>3、报错</h2><p>1）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“Person::Person(char *,int)”: 无法将参数 1 从“const char [5]”转换为“char *”</span><br></pre></td></tr></table></figure>
+<p>解决</p>
+<pre><code>解决方法：右键项目 -&gt; 属性 -&gt; C/C++ -&gt; 语言 -&gt; 符合模式改成“否”
 </code></pre>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><pre><code>1）https://blog.csdn.net/xiaoyaohuqijun/article/details/51001911
 </code></pre>
